@@ -1,3 +1,166 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+nav{
+	color:grey;
+	width:80%;
+    text-align: center;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+}
+.top{
+	width:40%;
+	display:inline-block;
+    margin:0 auto;
+    padding:5px;
+	
+}
+h1{
+	font-size:60px;
+	text-align: center;
+}
+header {
+	border-bottom:1px solid grey;
+	height: fit-content;
+}
+.header{
+	width:40%;
+    display:inline-block;
+   
+    padding:5px;	
+}
+.bottom{
+	width:30%;
+	display:inline-block;
+	
+}
+.middle-img{
+    width:100%;
+    margin:0 auto;
+    padding:5px;
+}
+footer{
+	border-top:2px solid grey;
+	margin:10px;
+}
+p {
+	text-align: center;
+}
+.started{
+	text-align: center;
+	border:1px solid black;
+	width:30%;
+	margin:0 auto;
+}
+.smalltitle{
+    display:flex;
+    justify-content: space-between;
+}
+.smalltitle div{
+    margin :0 20px;
+}
+@media only screen and (max-width: 800px){
+    .header img{
+        display:none;
+    }
+    .headerfirst{
+       display:flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       margin:0 auto;
+       }
+   /* Comment  .titlebox {
+        display:flex;
+        justify-content: center;
+    }*/
+    nav{
+       display:flex;
+       flex-direction: column-reverse;
+    }
+    .smalltitle{
+        display:flex;
+        justify-content: space-evenly;
+        margin:0 auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    .smalltitle{
+        display:flex;
+        flex-direction: column;
+    }
+    .section{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bottom{
+        margin:0 auto;
+    }
+    .top{
+        margin:0 auto;
+    }
+    .header{
+        margin:0 auto;
+    }
